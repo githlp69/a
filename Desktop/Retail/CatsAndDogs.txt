@@ -1,0 +1,37 @@
+hm:
+darrindeyoung
+XC748B73
+
+ss:
+Y5YAmmnNUyuJRrP22BM3h7qj
+Wt3qD2cpG5hF8upQhVMJbYkL
+
+C:\Users\Bestbuy\AppData\Local\Programs
+
+Tasks:
+
+1. Auto Sign-in (no RDX): Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+Make "DefaultUsername" value the computer username. Now go to Edit>New>String Value and name it "DefaultPassword"
+Modify and put in password. Create "AutoAdminLogon" string value and set value to 1.
+
+2a. Remove taskmgr (RDX): Find SID:
+
+\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+
+Computer\HKEY_USERS\XXX\Software\Microsoft\Windows\CurrentVersion\Policies\System
+
+Create System key then DisableTaskMgr dword, set value to 1. 
+
+2b. Remove taskmgr (no RDX): Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
+Create new key called "System" for "Policies." Create 32-bit DWORD called "DisableTaskMgr" and set value to "1"
+
+My need permissions: right click key>permissions>owner change>Permissions for Policies>Select Users>Select Full Control
+
+4. Power Options
+
+newyorkcity.hideservers.net
+us-east.hideservers.net
+ashburn.hideservers.net
+ca.hideservers.net
+amsterdam.hideservers.net
+fr.hideservers.net

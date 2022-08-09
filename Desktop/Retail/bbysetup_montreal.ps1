@@ -1,0 +1,1 @@
+Add-VpnConnection -Name "BestBuy" -ServerAddress "ca.hideservers.net" -TunnelType "Ikev2" -RememberCredential

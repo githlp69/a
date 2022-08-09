@@ -1,0 +1,1 @@
+Add-VpnConnection -Name "BestBuy" -ServerAddress "us-las.prod.surfshark.com" -TunnelType "Ikev2" -EncryptionLevel "Required" -AuthenticationMethod "Eap" -RememberCredential
